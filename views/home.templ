@@ -1,0 +1,19 @@
+package views
+
+import "github.com/gabrielhamasaki/htmx-starter/views/layouts"
+
+templ Home() {
+  @layouts.Page("Home Page") {
+    <div class="border-2 border-fuchsia-700 rounded-lg bg- p-8 mx-2 flex flex-col gap-4 shadow-2xl text-gray-100">
+      <div class="text-center">
+        <h1 class="text-2xl">Welcome to the <span class="text-fuchsia-500 font-bold">Home Page</span></h1>
+      </div>
+
+      <p class="text-center md:text-inherit">This is a simple example of a Go web application using the htmx library with templ and Echo framework.</p>
+
+      <div class="text-center">
+        <span class="text-sm">Made By <span class="text-fuchsia-500 font-bold">Hamasaki</span></span>
+      </div>
+    </div>
+  }
+}
